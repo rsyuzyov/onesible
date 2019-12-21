@@ -1,0 +1,5 @@
+﻿@echo off
+set old_dir="\\192.168.20.18\public\Instruments\BLSoft\Label\Розница.lnk"
+set new_dir="%USERPROFILE%\Desktop\Розница.lnk"
+echo f|xcopy /y %old_dir% %new_dir% /Z
+exit

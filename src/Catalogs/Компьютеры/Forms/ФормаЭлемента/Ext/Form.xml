@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Подразделение" id="7">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="IP" id="10">
+			<DataPath>Объект.IP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="IPКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="IPРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ТипОС" id="13">
+			<DataPath>1/0:3c902982-bd33-47e1-ab38-d5e371c37736</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипОСКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТипОСРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Состояние" id="28">
+			<DataPath>Объект.Состояние</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СостояниеКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Логин" id="31">
+			<DataPath>Объект.Логин</DataPath>
+			<ContextMenu name="ЛогинКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Пароль" id="34">
+			<DataPath>Объект.Пароль</DataPath>
+			<ContextMenu name="ПарольКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<CheckBoxField name="АутентификацияОС" id="37">
+			<DataPath>Объект.АутентификацияОС</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="АутентификацияОСКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="АутентификацияОСРасширеннаяПодсказка" id="39"/>
+		</CheckBoxField>
+		<InputField name="ВерсияПлатформы" id="40">
+			<DataPath>Объект.ВерсияПлатформы</DataPath>
+			<ContextMenu name="ВерсияПлатформыКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ВерсияПлатформыРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="ТипПлатформы" id="43">
+			<DataPath>Объект.ТипПлатформы</DataPath>
+			<ContextMenu name="ТипПлатформыКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ТипПлатформыРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="ВерсияОС" id="46">
+			<DataPath>Объект.ВерсияОС</DataPath>
+			<ContextMenu name="ВерсияОСКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ВерсияОСРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="Память" id="49">
+			<DataPath>Объект.Память</DataPath>
+			<ContextMenu name="ПамятьКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ПамятьРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="Процессор" id="52">
+			<DataPath>Объект.Процессор</DataPath>
+			<ContextMenu name="ПроцессорКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="ПроцессорРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="Разрядность" id="55">
+			<DataPath>Объект.Разрядность</DataPath>
+			<ContextMenu name="РазрядностьКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="РазрядностьРасширеннаяПодсказка" id="57"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Компьютеры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

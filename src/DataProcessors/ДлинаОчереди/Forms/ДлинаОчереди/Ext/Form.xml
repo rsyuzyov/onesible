@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновитьДанные" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьДанные</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьДанныеРасширеннаяПодсказка" id="56"/>
+			</Button>
+			<Button name="ФормаПередать" id="61">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Передать</CommandName>
+				<ExtendedTooltip name="ФормаПередатьРасширеннаяПодсказка" id="62"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="53">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="ПланОбмена" id="47">
+					<DataPath>Объект.ПланОбмена</DataPath>
+					<ContextMenu name="ПланОбменаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="Узел" id="50">
+					<DataPath>Объект.Узел</DataPath>
+					<ContextMenu name="УзелКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="УзелРасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="OnChange">УзелПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="1">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Table name="СоставОчереди1" id="3">
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Footer>true</Footer>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.СоставОчереди1</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СоставОчереди1КонтекстноеМеню" id="4">
+						<ChildItems>
+							<Button name="СоставОчереди1КонтекстноеМенюПередать" id="57">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Передать</CommandName>
+								<ExtendedTooltip name="СоставОчереди1КонтекстноеМенюПередатьРасширеннаяПодсказка" id="58"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СоставОчереди1КоманднаяПанель" id="5"/>
+					<ExtendedTooltip name="СоставОчереди1РасширеннаяПодсказка" id="6"/>
+					<SearchStringAddition name="СоставОчереди1СтрокаПоиска" id="7">
+						<AdditionSource>
+							<Item>СоставОчереди1</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставОчереди1СтрокаПоискаКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="СоставОчереди1СтрокаПоискаРасширеннаяПодсказка" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СоставОчереди1СостояниеПросмотра" id="10">
+						<AdditionSource>
+							<Item>СоставОчереди1</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставОчереди1СостояниеПросмотраКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="СоставОчереди1СостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СоставОчереди1УправлениеПоиском" id="13">
+						<AdditionSource>
+							<Item>СоставОчереди1</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставОчереди1УправлениеПоискомКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="СоставОчереди1УправлениеПоискомРасширеннаяПодсказка" id="15"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СоставОчереди1Тип" id="19">
+							<DataPath>Объект.СоставОчереди1.Тип</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>Объект.СоставОчереди1.RowsCount</FooterDataPath>
+							<ContextMenu name="СоставОчереди1ТипКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СоставОчереди1ТипРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="СоставОчереди1Количество" id="22">
+							<DataPath>Объект.СоставОчереди1.Количество</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>Объект.СоставОчереди1.TotalКоличество</FooterDataPath>
+							<ContextMenu name="СоставОчереди1КоличествоКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СоставОчереди1КоличествоРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="СоставОчереди2" id="25">
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Footer>true</Footer>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.СоставОчереди2</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СоставОчереди2КонтекстноеМеню" id="26">
+						<ChildItems>
+							<Button name="СоставОчереди2КонтекстноеМенюПередать" id="59">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Передать</CommandName>
+								<ExtendedTooltip name="СоставОчереди2КонтекстноеМенюПередатьРасширеннаяПодсказка" id="60"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СоставОчереди2КоманднаяПанель" id="27"/>
+					<ExtendedTooltip name="СоставОчереди2РасширеннаяПодсказка" id="28"/>
+					<SearchStringAddition name="СоставОчереди2СтрокаПоиска" id="29">
+						<AdditionSource>
+							<Item>СоставОчереди2</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставОчереди2СтрокаПоискаКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="СоставОчереди2СтрокаПоискаРасширеннаяПодсказка" id="31"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СоставОчереди2СостояниеПросмотра" id="32">
+						<AdditionSource>
+							<Item>СоставОчереди2</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставОчереди2СостояниеПросмотраКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="СоставОчереди2СостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СоставОчереди2УправлениеПоиском" id="35">
+						<AdditionSource>
+							<Item>СоставОчереди2</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставОчереди2УправлениеПоискомКонтекстноеМеню" id="36"/>
+						<ExtendedTooltip name="СоставОчереди2УправлениеПоискомРасширеннаяПодсказка" id="37"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СоставОчереди2Тип" id="41">
+							<DataPath>Объект.СоставОчереди2.Тип</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>Объект.СоставОчереди2.RowsCount</FooterDataPath>
+							<ContextMenu name="СоставОчереди2ТипКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="СоставОчереди2ТипРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<InputField name="СоставОчереди2Количество" id="44">
+							<DataPath>Объект.СоставОчереди2.Количество</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>Объект.СоставОчереди2.TotalКоличество</FooterDataPath>
+							<ContextMenu name="СоставОчереди2КоличествоКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="СоставОчереди2КоличествоРасширеннаяПодсказка" id="46"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДлинаОчереди</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДанные</Action>
+		</Command>
+		<Command name="Передать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Передать</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ПланОбмена">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПланыОбменов</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Узел">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

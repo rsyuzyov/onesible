@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка конвертации</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа4" id="24">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<InputField name="ПланОбмена" id="32">
+					<DataPath>Объект.ПланОбмена</DataPath>
+					<ContextMenu name="ПланОбменаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ПланОбменаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ИмяТипа" id="35">
+					<DataPath>Объект.ИмяТипа</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="ИмяТипаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ИмяТипаРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ИмяТипаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ПолучитьПример" id="68">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучитьПример</CommandName>
+					<ExtendedTooltip name="ПолучитьПримерРасширеннаяПодсказка" id="69"/>
+				</Button>
+				<Button name="Обмен" id="70">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Обмен</CommandName>
+					<ExtendedTooltip name="ОбменРасширеннаяПодсказка" id="71"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа6" id="59">
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<Page name="ГруппаРеквизиты" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа реквизиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРеквизитыРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<UsualGroup name="Группа5" id="48">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="49"/>
+							<ChildItems>
+								<InputField name="Код" id="38">
+									<DataPath>Объект.Код</DataPath>
+									<ContextMenu name="КодКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="Наименование" id="56">
+									<DataPath>Объект.Наименование</DataPath>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="58"/>
+								</InputField>
+								<InputField name="Номер" id="41">
+									<DataPath>Объект.Номер</DataPath>
+									<ContextMenu name="НомерКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="43"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСсылкаСтрокой" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание ссылки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ссылка строкой</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСсылкаСтрокойРасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<TextDocumentField name="СсылкаСтрокой" id="65">
+							<DataPath>Объект.СсылкаСтрокой</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="СсылкаСтрокойКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="СсылкаСтрокойРасширеннаяПодсказка" id="67"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Группа1" id="16">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="18">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<InputField name="Узел1" id="4">
+							<DataPath>Узел1</DataPath>
+							<ContextMenu name="Узел1КонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="Узел1РасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">Узел1ПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПравилоКонвертации1" id="26">
+							<DataPath>ПравилоКонвертации1</DataPath>
+							<ContextMenu name="ПравилоКонвертации1КонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ПравилоКонвертации1РасширеннаяПодсказка" id="28"/>
+							<Events>
+								<Event name="Opening">ПравилоКонвертации1Открытие</Event>
+							</Events>
+						</InputField>
+						<TextDocumentField name="ПравилоКонвертации1КодКонвертации" id="50">
+							<DataPath>ПравилоКонвертации1.КодКонвертации</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ПравилоКонвертации1КодКонвертацииКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ПравилоКонвертации1КодКонвертацииРасширеннаяПодсказка" id="52"/>
+						</TextDocumentField>
+						<Button name="ФормаСравнить12" id="44">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Сравнить12</CommandName>
+							<ExtendedTooltip name="ФормаСравнить12РасширеннаяПодсказка" id="45"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="20">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<InputField name="Узел2" id="7">
+							<DataPath>Узел2</DataPath>
+							<ContextMenu name="Узел2КонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="Узел2РасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="OnChange">Узел2ПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПравилоКонвертации2" id="29">
+							<DataPath>ПравилоКонвертации2</DataPath>
+							<ContextMenu name="ПравилоКонвертации2КонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ПравилоКонвертации2РасширеннаяПодсказка" id="31"/>
+							<Events>
+								<Event name="Opening">ПравилоКонвертации2Открытие</Event>
+							</Events>
+						</InputField>
+						<TextDocumentField name="ПравилоКонвертации2КодКонвертации" id="53">
+							<DataPath>ПравилоКонвертации2.КодКонвертации</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ПравилоКонвертации2КодКонвертацииКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ПравилоКонвертации2КодКонвертацииРасширеннаяПодсказка" id="55"/>
+						</TextDocumentField>
+						<Button name="ФормаСравнить21" id="46">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Сравнить21</CommandName>
+							<ExtendedTooltip name="ФормаСравнить21РасширеннаяПодсказка" id="47"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Обмен</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ИмяТипа</Field>
+				<Field>Объект.Код</Field>
+				<Field>Объект.Наименование</Field>
+				<Field>Объект.Номер</Field>
+				<Field>Объект.ПланОбмена</Field>
+				<Field>Объект.СсылкаСтрокой</Field>
+				<Field>Объект.Текст</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Узел1" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Узел 1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+			</Type>
+			<Save>
+				<Field>Узел1</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Узел2" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Узел 2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+			</Type>
+			<Save>
+				<Field>Узел2</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПравилоКонвертации1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило конвертации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПравилаКонвертации</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПравилоКонвертации1</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПравилоКонвертации2" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило конвертации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПравилаКонвертации</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПравилоКонвертации2</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сравнить12" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить 1-&gt;2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить12</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сравнить12</Action>
+		</Command>
+		<Command name="Сравнить21" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить 2-&gt;1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить21</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сравнить21</Action>
+		</Command>
+		<Command name="ПолучитьПример" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить пример</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить пример</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПример</Action>
+		</Command>
+		<Command name="Обмен" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обмен</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Узел1">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Узел2">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

@@ -1,0 +1,12 @@
+﻿mkdir c:\1c
+mkdir c:\1c\ex
+mkdir c:\1c\empty-ib
+mkdir c:\1c\epf
+
+copy \\192.168.20.18\public\qmc\empty-ib\1cv8.1cd c:\1c\empty-ib\ /y
+if DEFINED ProgramFiles(x86) (
+copy \\192.168.20.18\public\dist\aria2c.exe c:\1c\ex\ /y
+) else (
+copy \\192.168.20.18\public\dist\aria2c_x86.exe c:\1c\ex\ /y
+move /y c:\1c\ex\aria2c_x86.exe c:\1c\ex\aria2c.exe)
+

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПримеры" id="53">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Примеры</CommandName>
+				<ExtendedTooltip name="ФормаПримерыРасширеннаяПодсказка" id="54"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<SkipOnInput>true</SkipOnInput>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПланОбмена" id="4">
+			<DataPath>Объект.ПланОбмена</DataPath>
+			<ContextMenu name="ПланОбменаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ПланОбменаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ИмяТипа" id="7">
+			<DataPath>Объект.ИмяТипа</DataPath>
+			<ContextMenu name="ИмяТипаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИмяТипаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="ОбменЗапрещен" id="55">
+			<DataPath>Объект.ОбменЗапрещен</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОбменЗапрещенКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ОбменЗапрещенРасширеннаяПодсказка" id="57"/>
+		</CheckBoxField>
+		<UsualGroup name="Группа1" id="48">
+			<Height>3</Height>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="49"/>
+			<ChildItems>
+				<Table name="ВерсииОтправителя" id="10">
+					<TitleLocation>Top</TitleLocation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<HeightInTableRows>3</HeightInTableRows>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ВерсииОтправителя</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ВерсииОтправителяКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="ВерсииОтправителяКоманднаяПанель" id="12"/>
+					<ExtendedTooltip name="ВерсииОтправителяРасширеннаяПодсказка" id="13"/>
+					<SearchStringAddition name="ВерсииОтправителяСтрокаПоиска" id="14">
+						<AdditionSource>
+							<Item>ВерсииОтправителя</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВерсииОтправителяСтрокаПоискаКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="ВерсииОтправителяСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ВерсииОтправителяСостояниеПросмотра" id="17">
+						<AdditionSource>
+							<Item>ВерсииОтправителя</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВерсииОтправителяСостояниеПросмотраКонтекстноеМеню" id="18"/>
+						<ExtendedTooltip name="ВерсииОтправителяСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ВерсииОтправителяУправлениеПоиском" id="20">
+						<AdditionSource>
+							<Item>ВерсииОтправителя</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ВерсииОтправителяУправлениеПоискомКонтекстноеМеню" id="21"/>
+						<ExtendedTooltip name="ВерсииОтправителяУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ВерсииОтправителяВерсия" id="26">
+							<DataPath>Объект.ВерсииОтправителя.Версия</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВерсииОтправителяВерсияКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ВерсииОтправителяВерсияРасширеннаяПодсказка" id="28"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ВерсииПолучателя" id="29">
+					<TitleLocation>Top</TitleLocation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<HeightInTableRows>3</HeightInTableRows>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ВерсииПолучателя</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ВерсииПолучателяКонтекстноеМеню" id="30"/>
+					<AutoCommandBar name="ВерсииПолучателяКоманднаяПанель" id="31"/>
+					<ExtendedTooltip name="ВерсииПолучателяРасширеннаяПодсказка" id="32"/>
+					<SearchStringAddition name="ВерсииПолучателяСтрокаПоиска" id="33">
+						<AdditionSource>
+							<Item>ВерсииПолучателя</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВерсииПолучателяСтрокаПоискаКонтекстноеМеню" id="34"/>
+						<ExtendedTooltip name="ВерсииПолучателяСтрокаПоискаРасширеннаяПодсказка" id="35"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ВерсииПолучателяСостояниеПросмотра" id="36">
+						<AdditionSource>
+							<Item>ВерсииПолучателя</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВерсииПолучателяСостояниеПросмотраКонтекстноеМеню" id="37"/>
+						<ExtendedTooltip name="ВерсииПолучателяСостояниеПросмотраРасширеннаяПодсказка" id="38"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ВерсииПолучателяУправлениеПоиском" id="39">
+						<AdditionSource>
+							<Item>ВерсииПолучателя</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ВерсииПолучателяУправлениеПоискомКонтекстноеМеню" id="40"/>
+						<ExtendedTooltip name="ВерсииПолучателяУправлениеПоискомРасширеннаяПодсказка" id="41"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ВерсииПолучателяВерсия" id="45">
+							<DataPath>Объект.ВерсииПолучателя.Версия</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВерсииПолучателяВерсияКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ВерсииПолучателяВерсияРасширеннаяПодсказка" id="47"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<TextDocumentField name="КодКонвертации" id="50">
+			<DataPath>Объект.КодКонвертации</DataPath>
+			<ContextMenu name="КодКонвертацииКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="КодКонвертацииРасширеннаяПодсказка" id="52"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПравилаКонвертации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Примеры" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Примеры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Примеры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Примеры</Action>
+		</Command>
+	</Commands>
+</Form>

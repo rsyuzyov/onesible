@@ -1,0 +1,5 @@
+﻿@echo off
+set old_dir="\\192.168.20.18\public\Instruments\BLSoft\ibases\Pos\КОДМАГАЗИНА\Розница.bat"
+set new_dir="C:\1C\Розница.bat"
+echo f|xcopy /y %old_dir% %new_dir% /Z
+exit

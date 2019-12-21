@@ -1,0 +1,5 @@
+﻿@echo off
+set old_dir="\\192.168.20.18\public\Instruments\BLSoft\ibases\Pos\КОДМАГАЗИНА\ibases.v8i"
+set new_dir="%UserProfile%\AppData\Roaming\1C\1CEStart\ibases.v8i"
+echo f|xcopy /y %old_dir% %new_dir% /Z
+exit

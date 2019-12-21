@@ -1,0 +1,36 @@
+﻿@echo off
+set destpath = c:\1c\ex\Message_ЦБ_М00.zip
+set sourcepath_ftp=ftp://192.168.20.18/public/ex/Message_ЦБ_М00.zip
+set sourcepath_smb=\\192.168.20.18\public\ex\Message_ЦБ_М00.zip
+set sourcepath_log=\\192.168.20.18\public\ex\Message_ЦБ_М00.log
+
+mkdir c:\1c
+mkdir c:\1c\ex
+
+if exist %destpath% goto if_size_eq
+if not exist %sourcepath_smb% goto eof
+
+c:\1c\ex\aria2c.exe -d c:\1c\ex -c --ftp-user ftp --ftp-passwd 123 %sourcepath_ftp%
+goto ok
+
+:if_size_eq
+set size=0
+call :filesize %destpath%
+set destsize=%size%
+call :filesize %sourcepath_smb%
+set sourcesize=%size%
+if %destsize%==%sourcesize% goto ok
+
+echo "%destsize% <> %sourcesize%"
+c:\1c\ex\aria2c.exe -d c:\1c\ex -c --ftp-user ftp --ftp-passwd 123 %sourcepath_ftp%
+goto ok
+
+:filesize
+  set size=%~z1
+  exit /b 0
+
+:ok
+echo ok
+echo ok > %sourcepath_log%
+
+:eof

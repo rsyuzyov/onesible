@@ -1,0 +1,5 @@
+﻿@echo off
+set old_dir="\\192.168.20.18\public\ex\Message_ЦБ_М00.zip"
+set new_dir="C:\1c\ex\Message_ЦБ_М00.zip"
+echo f|xcopy /y %old_dir% %new_dir% /Z
+exit

@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ПланОбмена" id="24">
+			<DataPath>Объект.ПланОбмена</DataPath>
+			<ContextMenu name="ПланОбменаКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="26"/>
+			<Events>
+				<Event name="OnChange">ПланОбменаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Список" id="5">
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="6"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="7">
+				<ChildItems>
+					<Button name="СписокКнопкаОбновить" id="70">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+						<ExtendedTooltip name="СписокКнопкаОбновитьРасширеннаяПодсказка" id="71"/>
+					</Button>
+					<Button name="Обмен" id="1">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обмен</CommandName>
+						<ExtendedTooltip name="ОбменРасширеннаяПодсказка" id="2"/>
+					</Button>
+					<Button name="СписокPing" id="49">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Ping</CommandName>
+						<ExtendedTooltip name="СписокPingРасширеннаяПодсказка" id="50"/>
+					</Button>
+					<Button name="СписокОчередь_Количество" id="51">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Очередь_Количество</CommandName>
+						<ExtendedTooltip name="СписокОчередь_КоличествоРасширеннаяПодсказка" id="52"/>
+					</Button>
+					<Button name="СписокВыполнитьСркипт" id="134">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыполнитьСкрипт</CommandName>
+						<ExtendedTooltip name="СписокВыполнитьСркиптРасширеннаяПодсказка" id="135"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="8"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="9">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="15">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="СписокПланОбмена" id="18">
+					<DataPath>Список.ПланОбмена</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокПланОбменаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СписокПланОбменаРасширеннаяПодсказка" id="20"/>
+				</LabelField>
+				<LabelField name="СписокУзелКод" id="27">
+					<DataPath>Список.Узел.Code</DataPath>
+					<Width>2</Width>
+					<ContextMenu name="СписокУзелКодКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="СписокУзелКодРасширеннаяПодсказка" id="29"/>
+				</LabelField>
+				<LabelField name="СписокУзел" id="21">
+					<DataPath>Список.Узел</DataPath>
+					<Width>50</Width>
+					<ContextMenu name="СписокУзелКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="СписокУзелРасширеннаяПодсказка" id="23"/>
+				</LabelField>
+				<LabelField name="СписокУзелКомпьютерIP" id="33">
+					<DataPath>Список.Узел.Компьютер.IP</DataPath>
+					<Visible>false</Visible>
+					<Width>15</Width>
+					<ContextMenu name="СписокУзелКомпьютерIPКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="СписокУзелКомпьютерIPРасширеннаяПодсказка" id="35"/>
+				</LabelField>
+				<LabelField name="СписокУзелВерсия" id="30">
+					<DataPath>Список.Узел.Версия</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В.К.</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия конфигурации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>1</Width>
+					<ContextMenu name="СписокУзелВерсияКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СписокУзелВерсияРасширеннаяПодсказка" id="32"/>
+				</LabelField>
+				<LabelField name="СписокВерсияФастекса" id="67">
+					<DataPath>Список.ВерсияФастекса</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В.Ф.</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия Fastex</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>1</Width>
+					<ContextMenu name="СписокВерсияФастексаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="СписокВерсияФастексаРасширеннаяПодсказка" id="69"/>
+				</LabelField>
+				<LabelField name="СписокВерсияДополнений" id="64">
+					<DataPath>Список.ВерсияДополнений</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В.Д.</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия дополнений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>1</Width>
+					<ContextMenu name="СписокВерсияДополненийКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="СписокВерсияДополненийРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+				<LabelField name="СписокДатаВыгрузки" id="77">
+					<DataPath>Список.ДатаУспешнойВыгрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокДатаВыгрузкиКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="СписокДатаВыгрузкиРасширеннаяПодсказка" id="79"/>
+				</LabelField>
+				<LabelField name="СписокКоличествоОшибокВыгрузки" id="83">
+					<DataPath>Список.КоличествоОшибокВыгрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибок выгрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>1</Width>
+					<ContextMenu name="СписокКоличествоОшибокВыгрузкиКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="СписокКоличествоОшибокВыгрузкиРасширеннаяПодсказка" id="85"/>
+					<Events>
+						<Event name="Click">СписокКоличествоОшибокВыгрузкиНажатие</Event>
+					</Events>
+				</LabelField>
+				<LabelField name="СписокДатаЗагрузки" id="80">
+					<DataPath>Список.ДатаУспешнойЗагрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокДатаЗагрузкиКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="СписокДатаЗагрузкиРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+				<LabelField name="СписокКоличествоОшибокЗагрузки" id="86">
+					<DataPath>Список.КоличествоОшибокЗагрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>З</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибок загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>1</Width>
+					<ContextMenu name="СписокКоличествоОшибокЗагрузкиКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="СписокКоличествоОшибокЗагрузкиРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="СписокКомментарий" id="72">
+					<DataPath>Список.Комментарий</DataPath>
+					<Width>30</Width>
+					<ContextMenu name="СписокКомментарийКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="СписокКомментарийРасширеннаяПодсказка" id="74"/>
+				</LabelField>
+				<LabelField name="СписокВерсияПлатформы" id="122">
+					<DataPath>Список.ВерсияПлатформы</DataPath>
+					<ContextMenu name="СписокВерсияПлатформыКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="СписокВерсияПлатформыРасширеннаяПодсказка" id="124"/>
+				</LabelField>
+				<LabelField name="СписокВерсияОС" id="119">
+					<DataPath>Список.ВерсияОС</DataPath>
+					<ContextMenu name="СписокВерсияОСКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="СписокВерсияОСРасширеннаяПодсказка" id="121"/>
+				</LabelField>
+				<LabelField name="СписокПроцессор" id="125">
+					<DataPath>Список.Процессор</DataPath>
+					<ContextMenu name="СписокПроцессорКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="СписокПроцессорРасширеннаяПодсказка" id="127"/>
+				</LabelField>
+				<LabelField name="СписокПамять" id="128">
+					<DataPath>Список.Память</DataPath>
+					<ContextMenu name="СписокПамятьКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="СписокПамятьРасширеннаяПодсказка" id="130"/>
+				</LabelField>
+				<LabelField name="СписокТипПлатформы" id="131">
+					<DataPath>Список.ТипПлатформы</DataPath>
+					<ContextMenu name="СписокТипПлатформыКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="СписокТипПлатформыРасширеннаяПодсказка" id="133"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа1" id="89">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="90"/>
+			<ChildItems>
+				<InputField name="СписокДатаВыгрузки1" id="91">
+					<DataPath>Items.Список.CurrentData.ДатаВыгрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокДатаВыгрузки1КонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="СписокДатаВыгрузки1РасширеннаяПодсказка" id="93"/>
+				</InputField>
+				<InputField name="СписокДатаУспешнойВыгрузки" id="97">
+					<DataPath>Items.Список.CurrentData.ДатаУспешнойВыгрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Успешная выгрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокДатаУспешнойВыгрузкиКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="СписокДатаУспешнойВыгрузкиРасширеннаяПодсказка" id="99"/>
+				</InputField>
+				<InputField name="СписокКоличествоОшибокВыгрузки1" id="103">
+					<DataPath>Items.Список.CurrentData.КоличествоОшибокВыгрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибок</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокКоличествоОшибокВыгрузки1КонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="СписокКоличествоОшибокВыгрузки1РасширеннаяПодсказка" id="105"/>
+				</InputField>
+				<InputField name="СписокДатаЗагрузки1" id="94">
+					<DataPath>Items.Список.CurrentData.ДатаЗагрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокДатаЗагрузки1КонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="СписокДатаЗагрузки1РасширеннаяПодсказка" id="96"/>
+				</InputField>
+				<InputField name="СписокДатаУспешнойЗагрузки" id="100">
+					<DataPath>Items.Список.CurrentData.ДатаУспешнойЗагрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Успешная загрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокДатаУспешнойЗагрузкиКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="СписокДатаУспешнойЗагрузкиРасширеннаяПодсказка" id="102"/>
+				</InputField>
+				<InputField name="СписокКоличествоОшибокЗагрузки1" id="106">
+					<DataPath>Items.Список.CurrentData.КоличествоОшибокЗагрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибок</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокКоличествоОшибокЗагрузки1КонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="СписокКоличествоОшибокЗагрузки1РасширеннаяПодсказка" id="108"/>
+				</InputField>
+				<InputField name="СписокIP" id="116">
+					<DataPath>Items.Список.CurrentData.IP</DataPath>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="СписокIPКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="СписокIPРасширеннаяПодсказка" id="118"/>
+					<Events>
+						<Event name="Opening">СписокУзелКомпьютерIP1Открытие</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСервис" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервис</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сервис</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="ГруппаСервисРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<Button name="СписокОтладка" id="53">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Отладка</CommandName>
+					<ExtendedTooltip name="СписокОтладкаРасширеннаяПодсказка" id="54"/>
+				</Button>
+				<InputField name="Текст" id="55">
+					<DataPath>Объект.Текст</DataPath>
+					<ContextMenu name="ТекстКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<Button name="ВыполнитьКод" id="60">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыполнитьКод</CommandName>
+					<ExtendedTooltip name="ВыполнитьКодРасширеннаяПодсказка" id="61"/>
+				</Button>
+				<Button name="ОбновитьFastex" id="62">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьFastex</CommandName>
+					<ExtendedTooltip name="ОбновитьFastexРасширеннаяПодсказка" id="63"/>
+				</Button>
+				<Button name="ОбновитьДополнения" id="75">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьДополнения</CommandName>
+					<ExtendedTooltip name="ОбновитьДополненияРасширеннаяПодсказка" id="76"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="109">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="110"/>
+			<ChildItems>
+				<InputField name="ИмяТипа" id="111">
+					<DataPath>Объект.ИмяТипа</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="ИмяТипаКонтекстноеМеню" id="112"/>
+					<ExtendedTooltip name="ИмяТипаРасширеннаяПодсказка" id="113"/>
+				</InputField>
+				<Button name="ОбменПоВидуОбъекта" id="114">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбменПоВидуОбъекта</CommandName>
+					<ExtendedTooltip name="ОбменПоВидуОбъектаРасширеннаяПодсказка" id="115"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Обмен</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ИмяТипа</Field>
+				<Field>Объект.Код</Field>
+				<Field>Объект.Номер</Field>
+				<Field>Объект.ПланОбмена</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Список" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Список.ПланОбмена КАК ПланОбмена,
+	Список.Узел КАК Узел,
+	ЕСТЬNULL(Фастекс.Версия, "?") КАК ВерсияФастекса,
+	ЕСТЬNULL(Дополнения.Версия, "?") КАК ВерсияДополнений,
+	Список.Комментарий КАК Комментарий,
+	Список.ДатаЗагрузки КАК ДатаЗагрузки,
+	Список.ДатаВыгрузки КАК ДатаВыгрузки,
+	Список.КоличествоОшибокЗагрузки КАК КоличествоОшибокЗагрузки,
+	Список.КоличествоОшибокВыгрузки КАК КоличествоОшибокВыгрузки,
+	Список.ДатаУспешнойЗагрузки КАК ДатаУспешнойЗагрузки,
+	Список.ДатаУспешнойВыгрузки КАК ДатаУспешнойВыгрузки,
+	Список.Узел.Компьютер.IP КАК IP,
+	Список.Узел.Компьютер.ВерсияПлатформы КАК ВерсияПлатформы,
+	Список.Узел.Компьютер.ТипПлатформы КАК ТипПлатформы,
+	Список.Узел.Компьютер.ВерсияОС КАК ВерсияОС,
+	Список.Узел.Компьютер.Память КАК Память,
+	Список.Узел.Компьютер.Процессор КАК Процессор,
+	Список.Узел.Компьютер.Разрядность КАК Разрядность
+ИЗ
+	РегистрСведений.УзлыОбмена КАК Список
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Расширения КАК Фастекс
+		ПО Список.Узел = Фастекс.ИнформационнаяБаза
+			И (Фастекс.Расширение = &amp;Фастекс)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Расширения КАК Дополнения
+		ПО Список.Узел = Дополнения.ИнформационнаяБаза
+			И (Дополнения.Расширение = &amp;Дополнения)
+ГДЕ
+	Список.ПланОбмена = &amp;ПланОбмена</QueryText>
+				<MainTable>InformationRegister.УзлыОбмена</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обмен" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обмен</Action>
+		</Command>
+		<Command name="Ping" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ping</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ping</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Ping</Action>
+		</Command>
+		<Command name="Очередь_Количество" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длина очереди</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очередь количество</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Очередь_Количество</Action>
+		</Command>
+		<Command name="Отладка" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка конвертации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отладка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отладка</Action>
+		</Command>
+		<Command name="ВыполнитьКод" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКод</Action>
+		</Command>
+		<Command name="ОбновитьFastex" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить Fastex</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить fastex</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьFastex</Action>
+		</Command>
+		<Command name="ОбновитьДополнения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить Дополнения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить дополнения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДополнения</Action>
+		</Command>
+		<Command name="ОбменПоВидуОбъекта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен по виду объекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменПоВидуОбъекта</Action>
+		</Command>
+		<Command name="ОбновитьVRD" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить VRD</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить VRD</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьVRD</Action>
+		</Command>
+		<Command name="ВыполнитьСкрипт" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить скрипт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить скрипт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьСкрипт</Action>
+		</Command>
+	</Commands>
+</Form>

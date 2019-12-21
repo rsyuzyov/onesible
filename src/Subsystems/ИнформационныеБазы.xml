@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<Subsystem uuid="4bff76b2-08de-40b2-8629-be2c4a88845e">
+		<Properties>
+			<Name>ИнформационныеБазы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные базы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">40d185bf-6e51-4e7e-9c8f-424efd37da0c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДлительностьХраненияЛогаОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДлительностьХраненияСтатистикиСоединенийПриОбмене</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнформационныеБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Конфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Расширения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЛогОперацийИнформационныеБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Расширения</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

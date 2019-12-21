@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<DataProcessor uuid="edcb8e9c-91ab-48ad-968d-8775a5117f31">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонсольЗаданий" category="Object">
+				<xr:TypeId>2be631ba-153d-494e-8b71-310ebed08d1e</xr:TypeId>
+				<xr:ValueId>1437352e-f15d-4586-ab3d-7b6ad3b77492</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонсольЗаданий" category="Manager">
+				<xr:TypeId>43dad463-0c79-4541-bf93-2c2a0889eeb8</xr:TypeId>
+				<xr:ValueId>c7610a64-db9b-4fec-b27f-1f7c35beab41</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонсольЗаданий</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Консоль заданий</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>https://github.com/kuzyara/JobsConsole2019.epf (c)Душелов'2009</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.КонсольЗаданий.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ДиалогРегламентногоЗадания</Form>
+			<Form>ДиалогФоновогоЗадания</Form>
+			<Form>ДиалогНастроекСписка</Form>
+			<Form>ДиалогОтбораРегламентногоЗадания</Form>
+			<Form>ДиалогОтбораФоновогоЗадания</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

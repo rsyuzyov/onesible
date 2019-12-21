@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<Configuration uuid="a1a31473-b841-44b0-bc95-034d500a8849">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
+				<xr:ObjectId>8fdf20b1-fcc1-4bbf-83ae-c6d71979a1c7</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
+				<xr:ObjectId>f0a75c88-9e3b-4ed2-9d75-8ba11a67fa65</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
+				<xr:ObjectId>210fdf64-cd2f-4aa3-8d09-17e0a42515b7</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
+				<xr:ObjectId>07e9b588-fcf5-48b7-8360-63e6e34443d5</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
+				<xr:ObjectId>b2c53f78-256f-4b1b-8df6-c415906c4c59</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
+				<xr:ObjectId>5b741fc4-9410-4b69-93c0-9165e3fe2c9a</xr:ObjectId>
+			</xr:ContainedObject>
+		</InternalInfo>
+		<Properties>
+			<Name>Onesible</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Onesible</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<NamePrefix/>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_14</ConfigurationExtensionCompatibilityMode>
+			<DefaultRunMode>ManagedApplication</DefaultRunMode>
+			<UsePurposes>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
+			</UsePurposes>
+			<ScriptVariant>Russian</ScriptVariant>
+			<DefaultRoles/>
+			<Vendor/>
+			<Version>1.0.0.9</Version>
+			<UpdateCatalogAddress/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
+			<UseOrdinaryFormInManagedApplication>false</UseOrdinaryFormInManagedApplication>
+			<AdditionalFullTextSearchDictionaries/>
+			<CommonSettingsStorage/>
+			<ReportsUserSettingsStorage/>
+			<ReportsVariantsStorage/>
+			<FormDataSettingsStorage/>
+			<DynamicListsUserSettingsStorage/>
+			<Content/>
+			<DefaultReportForm/>
+			<DefaultReportVariantForm/>
+			<DefaultReportSettingsForm/>
+			<DefaultDynamicListSettingsForm/>
+			<DefaultSearchForm/>
+			<DefaultDataHistoryChangeHistoryForm/>
+			<DefaultDataHistoryVersionDataForm/>
+			<DefaultDataHistoryVersionDifferencesForm/>
+			<RequiredMobileApplicationPermissions>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Multimedia</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Location</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Contacts</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Calendars</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Telephony</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">PushNotification</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">LocalNotification</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Print</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">InAppPurchases</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Ads</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">BackgroundLocation</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">BackgroundAudioPlayback</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+				<v8:pair>
+					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">FileExchangeWithPersonalComputer</v8:Key>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+				</v8:pair>
+			</RequiredMobileApplicationPermissions>
+			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
+			<DefaultInterface/>
+			<DefaultStyle/>
+			<DefaultLanguage>Language.Русский</DefaultLanguage>
+			<BriefInformation/>
+			<DetailedInformation/>
+			<Copyright/>
+			<VendorInformationAddress/>
+			<ConfigurationInformationAddress/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
+			<ModalityUseMode>DontUse</ModalityUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
+			<CompatibilityMode>Version8_3_14</CompatibilityMode>
+			<DefaultConstantsForm/>
+		</Properties>
+		<ChildObjects>
+			<Language>Русский</Language>
+			<Subsystem>Компьютеры</Subsystem>
+			<Subsystem>ИнформационныеБазы</Subsystem>
+			<Subsystem>Обмены</Subsystem>
+			<Subsystem>Прочее</Subsystem>
+			<Subsystem>Сервис</Subsystem>
+			<CommonPicture>Светофор</CommonPicture>
+			<CommonPicture>ДлительнаяОперация16</CommonPicture>
+			<SessionParameter>РежимОтладки</SessionParameter>
+			<Role>ПолныеПрава</Role>
+			<Role>ВыполнениеОбмена</Role>
+			<Role>БазовыеПрава</Role>
+			<CommonTemplate>IPCEnable</CommonTemplate>
+			<CommonModule>ГлобальныйМодульСервер</CommonModule>
+			<CommonModule>КоннекторHTTP</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
+			<CommonModule>ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>СервисHTTP</CommonModule>
+			<CommonModule>Тексты</CommonModule>
+			<CommonModule>УдаленноеУправление</CommonModule>
+			<CommonModule>ФайловаяСистема</CommonModule>
+			<CommonModule>ФоновоеВыполнение</CommonModule>
+			<CommonModule>ПроверкаИзмененности</CommonModule>
+			<CommonModule>ПроверкаИзмененности_ПМ</CommonModule>
+			<CommonModule>ОбработкаСтрок</CommonModule>
+			<CommonModule>Фастекс</CommonModule>
+			<HTTPService>Controller</HTTPService>
+			<ScheduledJob>КонтрольВыполненияЗаданий</ScheduledJob>
+			<ScheduledJob>ПоискКомпьютеров</ScheduledJob>
+			<ScheduledJob>ПодключениеПульта</ScheduledJob>
+			<ScheduledJob>ПроверкаДоступностиСобственногоПульта</ScheduledJob>
+			<ScheduledJob>ВыполнениеОбменов</ScheduledJob>
+			<ScheduledJob>ВыполнениеОбменовПоТипу</ScheduledJob>
+			<ScheduledJob>ОбработкаЛоговОбмена</ScheduledJob>
+			<Constant>КаталогВнешнихДанных</Constant>
+			<Constant>КаталогПульта</Constant>
+			<Constant>ДлительностьХраненияЛогаОбмена</Constant>
+			<Constant>ДлительностьХраненияСтатистикиСоединенийПриОбмене</Constant>
+			<Catalog>ИнформационныеБазы</Catalog>
+			<Catalog>Компьютеры</Catalog>
+			<Catalog>Конфигурации</Catalog>
+			<Catalog>Подразделения</Catalog>
+			<Catalog>Расширения</Catalog>
+			<Catalog>РолиКомпьютеров</Catalog>
+			<Catalog>ПланыОбменов</Catalog>
+			<Catalog>ПравилаКонвертации</Catalog>
+			<Catalog>Скрипты</Catalog>
+			<DataProcessor>КонтрольФоновыхЗаданий</DataProcessor>
+			<DataProcessor>КонсольЗаданий</DataProcessor>
+			<DataProcessor>МенеджерРолиPult</DataProcessor>
+			<DataProcessor>МенеджерРолиApache</DataProcessor>
+			<DataProcessor>МенеджерРолиChocolatey</DataProcessor>
+			<DataProcessor>МенеджерРолиClient1C</DataProcessor>
+			<DataProcessor>МенеджерРолиJava</DataProcessor>
+			<DataProcessor>МенеджерРолиOneScript</DataProcessor>
+			<DataProcessor>МенеджерРолиPowershell</DataProcessor>
+			<DataProcessor>МенеджерРолиServer1C</DataProcessor>
+			<DataProcessor>МенеджерРолиZabbix</DataProcessor>
+			<DataProcessor>МенеджерРолиIPC</DataProcessor>
+			<DataProcessor>Обмен</DataProcessor>
+			<DataProcessor>ПрикладныеПроцедурыОбмена</DataProcessor>
+			<DataProcessor>ДлинаОчереди</DataProcessor>
+			<DataProcessor>ПомощникВыполненияОбновления</DataProcessor>
+			<DataProcessor>ПанельОбмена</DataProcessor>
+			<InformationRegister>РолиКомпьютеров</InformationRegister>
+			<InformationRegister>СвойстваКомпьютеров</InformationRegister>
+			<InformationRegister>Расширения</InformationRegister>
+			<InformationRegister>ЛогОперацийКомпьютеры</InformationRegister>
+			<InformationRegister>ЛогОперацийИнформационныеБазы</InformationRegister>
+			<InformationRegister>УзлыОбмена</InformationRegister>
+			<InformationRegister>ЛогОбмена</InformationRegister>
+			<InformationRegister>КлючевыеФразыЛогаОбмена</InformationRegister>
+			<InformationRegister>ДлительностьОбмена</InformationRegister>
+			<InformationRegister>ОбменыПоТипу</InformationRegister>
+			<InformationRegister>СтатистикаСоединений</InformationRegister>
+			<InformationRegister>СостояниеДлительныхОпераций</InformationRegister>
+		</ChildObjects>
+	</Configuration>
+</MetaDataObject>
