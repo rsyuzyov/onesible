@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ПланОбмена" id="1">
+			<DataPath>Запись.ПланОбмена</DataPath>
+			<ContextMenu name="ПланОбменаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Узел" id="4">
+			<DataPath>Запись.Узел</DataPath>
+			<ContextMenu name="УзелКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="УзелРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИмяТипа" id="35">
+			<DataPath>Запись.ИмяТипа</DataPath>
+			<ContextMenu name="ИмяТипаКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ИмяТипаРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<UsualGroup name="ГруппаЗагрузка" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа загрузка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаЗагрузкаРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="ДатаЗагрузки" id="10">
+					<DataPath>Запись.ДатаЗагрузки</DataPath>
+					<ContextMenu name="ДатаЗагрузкиКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаЗагрузкиРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="ДатаУспешнойЗагрузки" id="22">
+					<DataPath>1/0:642df52f-74e6-4c95-b0e1-376a93c72b5e</DataPath>
+					<ContextMenu name="ДатаУспешнойЗагрузкиКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДатаУспешнойЗагрузкиРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="КоличествоОшибокЗагрузки" id="16">
+					<DataPath>1/0:1263e5d2-1668-45dd-8505-9f5e337c75e4</DataPath>
+					<ContextMenu name="КоличествоОшибокЗагрузкиКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КоличествоОшибокЗагрузкиРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВыгрузка" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выгрузка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаВыгрузкаРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<InputField name="ДатаВыгрузки" id="13">
+					<DataPath>Запись.ДатаВыгрузки</DataPath>
+					<ContextMenu name="ДатаВыгрузкиКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДатаВыгрузкиРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="ДатаУспешнойВыгрузки" id="25">
+					<DataPath>1/0:2bcd9c5c-0e42-4c95-bcc2-3f33a7323dc4</DataPath>
+					<ContextMenu name="ДатаУспешнойВыгрузкиКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДатаУспешнойВыгрузкиРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="КоличествоОшибокВыгрузки" id="19">
+					<DataPath>1/0:c17f7cde-25a1-419c-94c8-b0b65d50b975</DataPath>
+					<ContextMenu name="КоличествоОшибокВыгрузкиКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КоличествоОшибокВыгрузкиРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ОбменОтложенДо" id="32">
+			<DataPath>1/0:46e4b8f2-4c41-4714-b446-8cb1052ffd16</DataPath>
+			<ContextMenu name="ОбменОтложенДоКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ОбменОтложенДоРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<InputField name="Комментарий" id="7">
+			<DataPath>1/0:074b2333-1057-4d49-80c5-c9745ee1c780</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="9"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ОбменыПоТипу</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
