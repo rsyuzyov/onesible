@@ -10,6 +10,37 @@
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
 		</InputField>
+		<InputField name="Идентификатор" id="7">
+			<DataPath>Объект.Идентификатор</DataPath>
+			<ContextMenu name="ИдентификаторКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="16">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<CheckBoxField name="ИнтерактивноеВыполнение" id="10">
+					<DataPath>Объект.ИнтерактивноеВыполнение</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИнтерактивноеВыполнениеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ИнтерактивноеВыполнениеРасширеннаяПодсказка" id="12"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыполнятьНаКлиенте" id="13">
+					<DataPath>Объект.ВыполнятьНаКлиенте</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыполнятьНаКлиентеКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ВыполнятьНаКлиентеРасширеннаяПодсказка" id="15"/>
+				</CheckBoxField>
+				<CheckBoxField name="Архив" id="18">
+					<DataPath>Объект.Архив</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="АрхивКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="АрхивРасширеннаяПодсказка" id="20"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
 		<TextDocumentField name="Текст" id="4">
 			<DataPath>Объект.Текст</DataPath>
 			<EditMode>EnterOnInput</EditMode>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
@@ -15,11 +16,14 @@
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
 		<Table name="Список" id="3">
+			<Representation>Tree</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
@@ -72,35 +76,39 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
-				<LabelField name="Текст" id="19">
-					<DataPath>Список.Текст</DataPath>
-					<ContextMenu name="ТекстКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="21"/>
+				<LabelField name="Идентификатор" id="19">
+					<DataPath>Список.Идентификатор</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ИдентификаторКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="21"/>
 				</LabelField>
-				<CheckBoxField name="ВыполнятьНаКлиенте" id="28">
+				<CheckBoxField name="ИнтерактивноеВыполнение" id="22">
+					<DataPath>Список.ИнтерактивноеВыполнение</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИнтерактивноеВыполнениеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ИнтерактивноеВыполнениеРасширеннаяПодсказка" id="24"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыполнятьНаКлиенте" id="25">
 					<DataPath>Список.ВыполнятьНаКлиенте</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ВыполнятьНаКлиентеКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ВыполнятьНаКлиентеРасширеннаяПодсказка" id="30"/>
+					<ContextMenu name="ВыполнятьНаКлиентеКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ВыполнятьНаКлиентеРасширеннаяПодсказка" id="27"/>
 				</CheckBoxField>
-				<LabelField name="ИнтерактивноеВыполнение" id="25">
-					<DataPath>Список.ИнтерактивноеВыполнение</DataPath>
-					<ContextMenu name="ИнтерактивноеВыполнениеКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="ИнтерактивноеВыполнениеРасширеннаяПодсказка" id="27"/>
+				<LabelField name="Ссылка" id="28">
+					<DataPath>Список.Ref</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="30"/>
 				</LabelField>
-				<CheckBoxField name="Архив" id="31">
-					<DataPath>Список.Архив</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="АрхивКонтекстноеМеню" id="32"/>
-					<ExtendedTooltip name="АрхивРасширеннаяПодсказка" id="33"/>
-				</CheckBoxField>
 			</ChildItems>
 		</Table>
-		<TextDocumentField name="Текст1" id="22">
-			<DataPath>Items.Список.CurrentData.Текст</DataPath>
-			<ContextMenu name="Текст1КонтекстноеМеню" id="23"/>
-			<ExtendedTooltip name="Текст1РасширеннаяПодсказка" id="24"/>
-		</TextDocumentField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">
@@ -108,12 +116,28 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Description</Field>
+				<Field>Список.ВыполнятьНаКлиенте</Field>
+				<Field>Список.Идентификатор</Field>
+				<Field>Список.ИнтерактивноеВыполнение</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<MainTable>Catalog.Скрипты</MainTable>
 				<ListSettings>
 					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ИнтерактивноеВыполнение</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Архив</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>

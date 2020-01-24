@@ -35,7 +35,7 @@
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
-			<RowPictureDataPath>Список.Состояние</RowPictureDataPath>
+			<RowPictureDataPath>~Список.Состояние</RowPictureDataPath>
 			<RowsPicture>
 				<xr:Ref>CommonPicture.Светофор</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -85,7 +85,7 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="Ссылка" id="22">
-					<DataPath>Список.Ссылка</DataPath>
+					<DataPath>~Список.Ссылка</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -93,12 +93,12 @@
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="Код" id="19">
-					<DataPath>Список.Код</DataPath>
+					<DataPath>~Список.Код</DataPath>
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
 				<LabelField name="Состояние" id="34">
-					<DataPath>Список.Состояние</DataPath>
+					<DataPath>~Список.Состояние</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -106,18 +106,18 @@
 					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="36"/>
 				</LabelField>
 				<LabelField name="Наименование" id="16">
-					<DataPath>Список.Наименование</DataPath>
+					<DataPath>~Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="IP" id="25">
-					<DataPath>Список.IP</DataPath>
+					<DataPath>~Список.IP</DataPath>
 					<ContextMenu name="IPКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="IPРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 				<LabelField name="Подразделение" id="28">
-					<DataPath>Список.Подразделение</DataPath>
+					<DataPath>~Список.Подразделение</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -125,7 +125,7 @@
 					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="ПодразделениеНаименование" id="31">
-					<DataPath>Список.Подразделение.Description</DataPath>
+					<DataPath>~Список.Подразделение.Description~Список.Подразделение.Наименование</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -145,32 +145,32 @@
 					<ExtendedTooltip name="ОбновляетсяСейчасРасширеннаяПодсказка" id="55"/>
 				</PictureField>
 				<LabelField name="ВерсияПлатформы" id="83">
-					<DataPath>Список.ВерсияПлатформы</DataPath>
+					<DataPath>~Список.ВерсияПлатформы</DataPath>
 					<ContextMenu name="ВерсияПлатформыКонтекстноеМеню" id="84"/>
 					<ExtendedTooltip name="ВерсияПлатформыРасширеннаяПодсказка" id="85"/>
 				</LabelField>
 				<LabelField name="ТипПлатформы" id="89">
-					<DataPath>Список.ТипПлатформы</DataPath>
+					<DataPath>~Список.ТипПлатформы</DataPath>
 					<ContextMenu name="ТипПлатформыКонтекстноеМеню" id="90"/>
 					<ExtendedTooltip name="ТипПлатформыРасширеннаяПодсказка" id="91"/>
 				</LabelField>
 				<LabelField name="ВерсияОС" id="80">
-					<DataPath>Список.ВерсияОС</DataPath>
+					<DataPath>~Список.ВерсияОС</DataPath>
 					<ContextMenu name="ВерсияОСКонтекстноеМеню" id="81"/>
 					<ExtendedTooltip name="ВерсияОСРасширеннаяПодсказка" id="82"/>
 				</LabelField>
 				<LabelField name="Процессор" id="86">
-					<DataPath>Список.Процессор</DataPath>
+					<DataPath>~Список.Процессор</DataPath>
 					<ContextMenu name="ПроцессорКонтекстноеМеню" id="87"/>
 					<ExtendedTooltip name="ПроцессорРасширеннаяПодсказка" id="88"/>
 				</LabelField>
 				<LabelField name="Память" id="92">
-					<DataPath>Список.Память</DataPath>
+					<DataPath>~Список.Память</DataPath>
 					<ContextMenu name="ПамятьКонтекстноеМеню" id="93"/>
 					<ExtendedTooltip name="ПамятьРасширеннаяПодсказка" id="94"/>
 				</LabelField>
 				<LabelField name="Разрядность" id="95">
-					<DataPath>Список.Разрядность</DataPath>
+					<DataPath>~Список.Разрядность</DataPath>
 					<ContextMenu name="РазрядностьКонтекстноеМеню" id="96"/>
 					<ExtendedTooltip name="РазрядностьРасширеннаяПодсказка" id="97"/>
 				</LabelField>
@@ -293,11 +293,11 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>Список.IP</Field>
-				<Field>Список.Код</Field>
-				<Field>Список.Подразделение</Field>
-				<Field>Список.Состояние</Field>
-				<Field>Список.Ссылка</Field>
+				<Field>~Список.IP</Field>
+				<Field>~Список.Код</Field>
+				<Field>~Список.Подразделение</Field>
+				<Field>~Список.Состояние</Field>
+				<Field>~Список.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>

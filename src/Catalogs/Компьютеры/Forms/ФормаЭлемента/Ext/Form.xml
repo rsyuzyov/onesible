@@ -5,7 +5,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="Код" id="1">
-			<DataPath>Объект.Code</DataPath>
+			<DataPath>1/-2</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>

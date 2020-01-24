@@ -2,26 +2,26 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
 	<DataProcessor uuid="f4960a47-2146-4dc4-8024-4d898eebebca">
 		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.ДлинаОчереди" category="Object">
+			<xr:GeneratedType name="DataProcessorObject.СоставОчереди" category="Object">
 				<xr:TypeId>7e68da6f-a067-4088-b35c-9f19808c7452</xr:TypeId>
 				<xr:ValueId>786866f0-0d51-497b-81ea-7e1d6ddb1a63</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.ДлинаОчереди" category="Manager">
+			<xr:GeneratedType name="DataProcessorManager.СоставОчереди" category="Manager">
 				<xr:TypeId>90e3392c-dde3-431f-893a-d1e1f6efeb84</xr:TypeId>
 				<xr:ValueId>6a3214a9-532d-4b97-9beb-6464968858be</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ДлинаОчереди</Name>
+			<Name>СоставОчереди</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Длина очереди</v8:content>
+					<v8:content>Состав очереди</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>DataProcessor.ДлинаОчереди.Form.ДлинаОчереди</DefaultForm>
+			<DefaultForm>DataProcessor.СоставОчереди.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>
@@ -98,11 +98,11 @@
 			</Attribute>
 			<TabularSection uuid="b4a00eb6-62bb-4a68-8a3b-b889a234b85e">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ДлинаОчереди.СоставОчереди1" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.СоставОчереди.СоставОчереди1" category="TabularSection">
 						<xr:TypeId>8558ee7a-e180-4c01-9e9c-2057561dde0f</xr:TypeId>
 						<xr:ValueId>8b0ed521-20d5-4960-be5b-9cafa831483a</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ДлинаОчереди.СоставОчереди1" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.СоставОчереди.СоставОчереди1" category="TabularSectionRow">
 						<xr:TypeId>785fc7b1-6900-415f-b0b9-af99702bf11b</xr:TypeId>
 						<xr:ValueId>5f64dec9-c886-4427-9b4e-1d9bc1ed71b5</xr:ValueId>
 					</xr:GeneratedType>
@@ -233,11 +233,11 @@
 			</TabularSection>
 			<TabularSection uuid="1bcf89e7-c42d-4dd8-942e-e435c1250e60">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ДлинаОчереди.СоставОчереди2" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.СоставОчереди.СоставОчереди2" category="TabularSection">
 						<xr:TypeId>925a30eb-9716-4470-94f6-3987b2463345</xr:TypeId>
 						<xr:ValueId>77d96393-66f6-482c-860f-a28dfe61267b</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ДлинаОчереди.СоставОчереди2" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.СоставОчереди.СоставОчереди2" category="TabularSectionRow">
 						<xr:TypeId>76ce22bb-0474-40ae-a52f-fd6467969ee5</xr:TypeId>
 						<xr:ValueId>04bebbaf-90f6-46bf-906a-953f5fb77dcd</xr:ValueId>
 					</xr:GeneratedType>
@@ -366,7 +366,7 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ДлинаОчереди</Form>
+			<Form>Форма</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

@@ -201,7 +201,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DataProcessorObject.Обмен</v8:Type>
+				<v8:Type>cfg:DataProcessorObject.НастройкаКонвертации</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>

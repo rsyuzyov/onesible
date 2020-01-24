@@ -51,17 +51,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.Обмен.Attribute.СсылкаСтрокой</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.СтатистикаСоединений</name>
 		<right>
 			<name>Read</name>
@@ -105,17 +94,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.Обмен.Attribute.ИмяТипа</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ДлительностьОбмена</name>
 		<right>
 			<name>Read</name>
@@ -131,28 +109,6 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.Обмен.Attribute.Номер</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.Обмен.Attribute.Текст</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -189,17 +145,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.Обмен.Attribute.Наименование</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ПанельОбмена</name>
 		<right>
 			<name>Use</name>
@@ -226,17 +171,6 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.Обмен.Attribute.Код</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -270,7 +204,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ДлинаОчереди</name>
+		<name>DataProcessor.СоставОчереди</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>

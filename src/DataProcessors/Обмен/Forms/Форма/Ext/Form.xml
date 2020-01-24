@@ -57,13 +57,8 @@
 					</Button>
 					<Button name="СписокОчередь_Количество" id="51">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.Очередь_Количество</CommandName>
+						<CommandName>Form.Command.СоставОчереди</CommandName>
 						<ExtendedTooltip name="СписокОчередь_КоличествоРасширеннаяПодсказка" id="52"/>
-					</Button>
-					<Button name="СписокВыполнитьСркипт" id="134">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ВыполнитьСкрипт</CommandName>
-						<ExtendedTooltip name="СписокВыполнитьСркиптРасширеннаяПодсказка" id="135"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
@@ -103,7 +98,7 @@
 					<ExtendedTooltip name="СписокПланОбменаРасширеннаяПодсказка" id="20"/>
 				</LabelField>
 				<LabelField name="СписокУзелКод" id="27">
-					<DataPath>Список.Узел.Code</DataPath>
+					<DataPath>Список.Код</DataPath>
 					<Width>2</Width>
 					<ContextMenu name="СписокУзелКодКонтекстноеМеню" id="28"/>
 					<ExtendedTooltip name="СписокУзелКодРасширеннаяПодсказка" id="29"/>
@@ -268,6 +263,11 @@
 					<ContextMenu name="СписокТипПлатформыКонтекстноеМеню" id="132"/>
 					<ExtendedTooltip name="СписокТипПлатформыРасширеннаяПодсказка" id="133"/>
 				</LabelField>
+				<LabelField name="СписокПортПубликации" id="139">
+					<DataPath>Список.ПортПубликации</DataPath>
+					<ContextMenu name="СписокПортПубликацииКонтекстноеМеню" id="140"/>
+					<ExtendedTooltip name="СписокПортПубликацииРасширеннаяПодсказка" id="141"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 		<UsualGroup name="Группа1" id="89">
@@ -360,29 +360,29 @@
 					<v8:content>Сервис</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа сервис</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСервисРасширеннаяПодсказка" id="59"/>
 			<ChildItems>
-				<Button name="СписокОтладка" id="53">
+				<Button name="СписокНастройкаКонвертации" id="53">
 					<Type>UsualButton</Type>
-					<CommandName>Form.Command.Отладка</CommandName>
-					<ExtendedTooltip name="СписокОтладкаРасширеннаяПодсказка" id="54"/>
+					<CommandName>Form.Command.НастройкаКонвертации</CommandName>
+					<ExtendedTooltip name="СписокНастройкаКонвертацииРасширеннаяПодсказка" id="54"/>
 				</Button>
-				<InputField name="Текст" id="55">
-					<DataPath>Объект.Текст</DataPath>
-					<ContextMenu name="ТекстКонтекстноеМеню" id="56"/>
-					<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="57"/>
+				<InputField name="Скрипт" id="136">
+					<DataPath>Объект.Скрипт</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="СкриптКонтекстноеМеню" id="137"/>
+					<ExtendedTooltip name="СкриптРасширеннаяПодсказка" id="138"/>
+					<Events>
+						<Event name="OnChange">СкриптПриИзменении</Event>
+					</Events>
 				</InputField>
-				<Button name="ВыполнитьКод" id="60">
+				<Button name="СписокВыполнитьСркипт" id="134">
 					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ВыполнитьКод</CommandName>
-					<ExtendedTooltip name="ВыполнитьКодРасширеннаяПодсказка" id="61"/>
+					<CommandName>Form.Command.ВыполнитьСкрипт</CommandName>
+					<ExtendedTooltip name="СписокВыполнитьСркиптРасширеннаяПодсказка" id="135"/>
 				</Button>
 				<Button name="ОбновитьFastex" id="62">
 					<Type>UsualButton</Type>
@@ -396,24 +396,6 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="Группа2" id="109">
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="110"/>
-			<ChildItems>
-				<InputField name="ИмяТипа" id="111">
-					<DataPath>Объект.ИмяТипа</DataPath>
-					<ListChoiceMode>true</ListChoiceMode>
-					<ContextMenu name="ИмяТипаКонтекстноеМеню" id="112"/>
-					<ExtendedTooltip name="ИмяТипаРасширеннаяПодсказка" id="113"/>
-				</InputField>
-				<Button name="ОбменПоВидуОбъекта" id="114">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ОбменПоВидуОбъекта</CommandName>
-					<ExtendedTooltip name="ОбменПоВидуОбъектаРасширеннаяПодсказка" id="115"/>
-				</Button>
-			</ChildItems>
-		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -422,10 +404,11 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>
-				<Field>Объект.ИмяТипа</Field>
-				<Field>Объект.Код</Field>
-				<Field>Объект.Номер</Field>
+				<Field>1/0:8e619057-481c-469b-baf7-b5031ac69087</Field>
+				<Field>1/0:9383e656-b322-4917-a6c3-e7bed055caab</Field>
+				<Field>1/0:dddcfb6e-f3dd-4878-8c1d-c199cf7eb118</Field>
 				<Field>Объект.ПланОбмена</Field>
+				<Field>Объект.Скрипт</Field>
 			</Save>
 		</Attribute>
 		<Attribute name="Список" id="2">
@@ -442,6 +425,7 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
+	Список.Код КАК Код,
 	Список.ПланОбмена КАК ПланОбмена,
 	Список.Узел КАК Узел,
 	ЕСТЬNULL(Фастекс.Версия, "?") КАК ВерсияФастекса,
@@ -459,7 +443,11 @@
 	Список.Узел.Компьютер.ВерсияОС КАК ВерсияОС,
 	Список.Узел.Компьютер.Память КАК Память,
 	Список.Узел.Компьютер.Процессор КАК Процессор,
-	Список.Узел.Компьютер.Разрядность КАК Разрядность
+	Список.Узел.Компьютер.Разрядность КАК Разрядность,
+	РезультатыВыполненияСкриптов.Дата КАК СкриптДата,
+	РезультатыВыполненияСкриптов.Результат КАК СкриптРезультат,
+	РезультатыВыполненияСкриптов.Комментарий КАК СкриптКомментарий,
+	Список.Узел.ПортПубликации КАК ПортПубликации
 ИЗ
 	РегистрСведений.УзлыОбмена КАК Список
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Расширения КАК Фастекс
@@ -468,6 +456,9 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Расширения КАК Дополнения
 		ПО Список.Узел = Дополнения.ИнформационнаяБаза
 			И (Дополнения.Расширение = &amp;Дополнения)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РезультатыВыполненияСкриптов КАК РезультатыВыполненияСкриптов
+		ПО Список.Узел.Компьютер = РезультатыВыполненияСкриптов.Компьютер
+			И (РезультатыВыполненияСкриптов.Скрипт = &amp;Скрипт)
 ГДЕ
 	Список.ПланОбмена = &amp;ПланОбмена</QueryText>
 				<MainTable>InformationRegister.УзлыОбмена</MainTable>
@@ -521,22 +512,22 @@
 			</ToolTip>
 			<Action>Ping</Action>
 		</Command>
-		<Command name="Очередь_Количество" id="5">
+		<Command name="СоставОчереди" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Длина очереди</v8:content>
+					<v8:content>Состав очереди</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Очередь количество</v8:content>
+					<v8:content>Состав очереди</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Очередь_Количество</Action>
+			<Action>СоставОчереди</Action>
 		</Command>
-		<Command name="Отладка" id="6">
+		<Command name="НастройкаКонвертации" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -546,10 +537,10 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отладка</v8:content>
+					<v8:content>Настройка конвертации</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Отладка</Action>
+			<Action>НастройкаКонвертации</Action>
 		</Command>
 		<Command name="ВыполнитьКод" id="7">
 			<Title>
@@ -610,21 +601,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбменПоВидуОбъекта</Action>
-		</Command>
-		<Command name="ОбновитьVRD" id="11">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить VRD</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить VRD</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОбновитьVRD</Action>
 		</Command>
 		<Command name="ВыполнитьСкрипт" id="9">
 			<Title>

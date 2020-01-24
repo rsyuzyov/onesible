@@ -19,7 +19,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УзлыОбмена</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Обмен</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПравилаКонвертации</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">40d185bf-6e51-4e7e-9c8f-424efd37da0c</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЛогОбмена</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КлючевыеФразыЛогаОбмена</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДлительностьОбмена</xr:Item>
@@ -27,9 +26,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатистикаСоединений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДлительностьХраненияЛогаОбмена</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДлительностьХраненияСтатистикиСоединенийПриОбмене</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДлинаОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СоставОчереди</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникВыполненияОбновления</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкаКонвертации</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

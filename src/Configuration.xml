@@ -198,9 +198,10 @@
 			<DataProcessor>МенеджерРолиIPC</DataProcessor>
 			<DataProcessor>Обмен</DataProcessor>
 			<DataProcessor>ПрикладныеПроцедурыОбмена</DataProcessor>
-			<DataProcessor>ДлинаОчереди</DataProcessor>
+			<DataProcessor>СоставОчереди</DataProcessor>
 			<DataProcessor>ПомощникВыполненияОбновления</DataProcessor>
 			<DataProcessor>ПанельОбмена</DataProcessor>
+			<DataProcessor>НастройкаКонвертации</DataProcessor>
 			<InformationRegister>РолиКомпьютеров</InformationRegister>
 			<InformationRegister>СвойстваКомпьютеров</InformationRegister>
 			<InformationRegister>Расширения</InformationRegister>
@@ -213,6 +214,7 @@
 			<InformationRegister>ОбменыПоТипу</InformationRegister>
 			<InformationRegister>СтатистикаСоединений</InformationRegister>
 			<InformationRegister>СостояниеДлительныхОпераций</InformationRegister>
+			<InformationRegister>РезультатыВыполненияСкриптов</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
